@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Canvas editor</title>
+</head>
+<body id="body">
+    <div class="menu">
+
+        <div class="select-color"> 
+            <select id="s-color" autocomplete="off" required>
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="cyan">Cyan</option>
+                <option value="pink">Pink</option>
+                <option value="white">White</option>
+                <option value="gray">Gray</option>
+            </select>
+        </div>
+        
+        <div class="select-line-width"> 
+            <select id="s-line-width" autocomplete="off" required>
+                <option value="1">1px</option>
+                <option value="2">2px</option>
+                <option value="3">3px</option>
+                <option value="4">4px</option>
+                <option value="5">5px</option>
+                <option value="6">6px</option>
+                <option value="7">7px</option>
+                <option value="8">8px</option>
+                <option value="9">9px</option>
+                <option value="10">10px</option>
+            </select>
+        </div>
+
+        <div class="select-shape">
+            <select id="s-shape" autocomplete="off" required>
+                <option value="sketch">Sketch</option>
+                <option value="line">Line</option>
+                <option value="rectangle">Rectangle</option>
+                <option value="circle">Circle</option>
+                <option value="brush">Brush</option>
+            </select>
+        </div>
+
+        <div class="select-filter">
+            <select id="s-filter" autocomplete="off" required>
+                <option value="none">None</option>
+                <option value="blur">Blur</option>
+                <option value="sepia">Sepia</option>
+                <option value="contrast">Contrast</option>
+                <option value="invert">Invert</option>
+            </select>
+        </div>
+
+    </div>
+
+    
+    <canvas id="canvas"></canvas>
+    
+    <div class="options">
+        <button onclick="clearArea(); clearAreaBuffer(); return false;">Clear Area</button>
+    </div>
+
+    <canvas id="canvasBuffer" style="display: none"></canvas>
+    
+    <div id="test"></div>
+    
+</body>
+</html>
